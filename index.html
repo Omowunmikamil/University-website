@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>University website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/edu_logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="closeMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="openMenu()"></i>
+      </nav>
+
+      <div class="text_box">
+        <h1>World's Biggest University</h1>
+        <p>
+          website making is now one of the simplest thing in the World, With
+          just learning HTML, CSS, <br />JavaScript you will be good to go.
+        </p>
+        <a href="" class="hero_button">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!-------Course------->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermidiate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+            similique molestiae assumenda fuga dolorum excepturi commodi rerum
+            facilis! Labore consequatur vel quas perspiciatis iure, illum
+            doloribus eius dolorum qui ab.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+            similique molestiae assumenda fuga dolorum excepturi commodi rerum
+            facilis! Labore consequatur vel quas perspiciatis iure, illum
+            doloribus eius dolorum qui ab.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+            similique molestiae assumenda fuga dolorum excepturi commodi rerum
+            facilis! Labore consequatur vel quas perspiciatis iure, illum
+            doloribus eius dolorum qui ab.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------campus------->
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/oregon.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-------Javascript for Toggle Menu------->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function openMenu() {
+        navLinks.style.right = "0";
+      }
+      function closeMenu() {
+        navLinks.style.right = "-150px";
+      }
+    </script>
+  </body>
+</html>
