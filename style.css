@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.header {
+#header {
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 78, 84, 0.7), rgba(3, 89, 95, 0.7)),url(images/banner_1.jpg);
@@ -83,7 +83,7 @@ nav img {
     border: 1px solid #f50606;
     color: #fff;
     background: #f50606;
-    transition: 1s;
+    transition: 0.9s;
 }
 
 nav .fa {
@@ -91,17 +91,17 @@ nav .fa {
 }
 
 /*-----course-----*/
-.course {
+#course {
     width: 80%;
     padding-top: 100px;
     text-align: center;
     margin: auto;
 }
-.course h1 {
+#course h1 {
     font-size: 35px;
     font-weight: 700;
 }
-.course p {
+#course p {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -131,11 +131,15 @@ h3 {
 }
 
 /*-----Campus-----*/
-.campus {
+#campus {
     width: 80%;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
     margin: auto;
+}
+#campus h1 {
+    font-size: 35px;
+    font-weight: 700;
 }
 .campus-col {
     border-radius: 10px;
@@ -144,6 +148,233 @@ h3 {
     margin-bottom: 30px;
     overflow: hidden;
 }
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover {
+    background-color: rgba(255, 32, 32, 0.6);
+}
+.layer h3 {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*-----Facilities-----*/
+.facilities {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.facilities h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+.facilities-col {
+    flex-basis: 31%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p {
+    padding: 0;
+}
+.facilities-col h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/*------testimonials-----*/
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonials h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+.testimonials-col {
+    flex-basis: 44%;
+    margin-bottom: 5px;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 25px;
+    background: #fddcdc;
+    display: flex;
+}
+.testimonials-col img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 5px;
+}
+.testimonials-col p {
+    padding: 0;
+}
+.testimonials-col h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.testimonials-col .fa {
+    color: #f5a106;
+}
+
+/*-------about-----*/
+#about {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+#about h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#about img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#about p {
+    padding: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/*-------Call to action-----*/
+#contact {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+#contact p {
+    padding: 0;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 400;
+}
+#contact .cta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/banner_2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin:20px auto;
+    text-align: center;
+    height: auto;
+}
+#contact .cta h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.contact-left {
+    flex-basis: 30%;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover {
+    color: #f70000;
+    transform: translate(-2px);
+}
+.btn_btn {
+    display: inline-block;
+    background: #f50606;
+    color: #fff;
+    font-size: 13px;
+    padding: 12px 34px;
+    border: 1px solid #f50606;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.contact-left p {
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.contact-left p i {
+    color: #f51717;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-right {
+    flex-basis: 65%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#5f5e5e8a;
+    padding: 10px;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+/*-----footer-----*/
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+h3 span {
+    color: #f50606;
+}
+footer p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5e5d5d;
+    padding: 10px;
+    line-height: 5px;
+}
+
 
 
 
@@ -158,6 +389,53 @@ h3 {
         font-size: 50px;
         font-weight: 800;
     }
+    .testimonials-col {
+        flex-basis: 40%;
+    }
+    .facilities-col h3 {
+        font-size: 16px;
+    }
+    #contact .cta h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+    .contact-left p {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .contact-left p i {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .social-icons a {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .btn_btn {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    form input, form textarea {
+        width: 80%;
+        border: 0;
+        outline: none;
+        background:#5f5e5e8a;
+        padding: 15px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 6px;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
 }
 
 @media(max-width: 700px) {
@@ -178,7 +456,6 @@ h3 {
         text-align: left;
         z-index: 2;
         transition: 1s;
-
     }
     nav .fa {
         display: block;
@@ -196,7 +473,70 @@ h3 {
     .course h1 {
         font-size: 30px;
     }
+    .course-col {
+        margin-bottom: 20px;
+    }
+    .facilities-col {
+        margin-bottom: 20px;
+    }
+    .testimonials-col {
+        margin-bottom: 20px;
+    }
+    .testimonials-col img {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    #about {
+        padding-top: 100px;
+    }
+    #contact .cta {
+        padding: 0;
+        margin-left: 0;
+    }
+    #contact .cta h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .contact-left p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .contact-left p i {
+        font-size: 15px;
+        margin: 5px;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    .social-icons a {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    form input, form textarea {
+        width: 80%;
+        border: 0;
+        outline: none;
+        background:#5f5e5e8a;
+        padding: 10px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+    footer p {
+        font-size: 12px;
+    }
 }
+/*#msg {
+    color:#008268;
+    margin-top: -40px;
+    display: block;
+}*/
+
 
 
 

@@ -13,19 +13,21 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://kit.fontawesome.com/e98c27c3ea.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <section class="header">
+    <section id="header">
       <nav>
         <a href="index.html"><img src="images/edu_logo.png" /></a>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="closeMenu()"></i>
           <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">COURSE</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#course">COURSE</a></li>
+            <li><a href="#campus">CAMPUS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="openMenu()"></i>
@@ -42,7 +44,7 @@
     </section>
 
     <!-------Course------->
-    <section class="course">
+    <section id="course">
       <h1>Courses We Offer</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <div class="row">
@@ -77,15 +79,148 @@
     </section>
 
     <!-------campus------->
-    <section class="campus">
+    <section id="campus">
       <h1>Our Global Campus</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       <div class="row">
         <div class="campus-col">
-          <img src="images/oregon.jpg" />
+          <img src="images/oregon.png" />
+          <div class="layer">
+            <h3>Oregon</h3>
+          </div>
+        </div>
+       <div class="campus-col">
+          <img src="images/london.png" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/newyork.png" />
+          <div class="layer">
+            <h3>New York</h3>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-------Facilities------->
+    <section class="facilities">
+      <h1>Our facilities</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png">
+          <h3>World Class library</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem totam aspernatur sapiente dicta aliquam aliquid repellat molestiae ipsam.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cafeteria.png">
+        <h3>Healthy and Tasty Meal</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem totam aspernatur sapiente dicta aliquam aliquid repellat molestiae ipsam.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/basketball.png">
+          <h3>Secure Play Ground</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem totam aspernatur sapiente dicta aliquam aliquid repellat molestiae ipsam.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-------Testimonials------->
+    <section class="testimonials">
+      <h1>Our Students Testimonials</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <div class="row">
+        <div class="testimonials-col">
+          <img src="images/user_1.jpg">
+          <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed a tenetur suscipit explicabo nam. Recusandae necessitatibus quaerat obcaecati ea autem mollitia sapiente ipsam eos nesciunt earum.</p>
+            <h3>Michele William</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+        <div class="testimonials-col">
+          <img src="images/user_2.jpg">
+          <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed a tenetur suscipit explicabo nam. Recusandae necessitatibus quaerat obcaecati ea autem mollitia sapiente ipsam eos nesciunt earum.</p>
+            <h3>Majid Muhammed</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+        <!--<div class="testimonials-col">
+          <img src="images/user_3.jpg">
+          <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed a tenetur suscipit explicabo nam. Recusandae necessitatibus quaerat obcaecati ea autem mollitia sapiente ipsam eos nesciunt earum, ex quo inventore temporibus!</p>
+            <h3>Mariam Hassan</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----About Us   -->
+    <section id="about">
+      <h1>About Us</h1>
+      <img src="images/about.jpg">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium nulla assumenda neque ex pariatur magnam. Aperiam voluptatum earum error quidem eos, quis consequuntur sed quam eaque eligendi, incidunt nihil?</p>
+    </section>
+
+    <!-------Call To Action------->
+    <section id="contact">
+        <div class="cta">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>balikiskamil@gmail.com</p>
+              <p><i class="fa fa-phone"></i>+2348138777481</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/omowunmi-kamiludeen/"><i class="fa-brands fa-linkedin"></i></i></a>
+              <a href="https://github.com/Omowunmikamil"><i class="fa-brands fa-github"></i></i></a>
+              <a href="https://twitter.com/Dev_juin_io"><i class="fa-brands fa-twitter"></i></i></a>
+              <a href="https://api.whatsapp.com/send?phone=2348138777481&text=Hello,%20Omowunmi%20Kamiludeen%20here,%20drop%20a%20message%20I%27ll%20get%20back%20to%20it%20shortly.%20"><i class="fa-brands fa-whatsapp"></i></i></a>
+              <a href="https://web.facebook.com/omowunmi.kamil"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <a href="https://drive.google.com/file/d/1F2QDNeq7LVXrbbFb_CTFgcRZVcMf08sk/view?usp=sharing" class="btn_btn">RESUME</a>
+            </div>
+
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn_btn">SUBMIT</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      <!--<h1>Enroll for Our Various Online Courses <br>Anywhere from the World</h1>
+      <a href="" class="hero_button">CONTACT US</a>-->
+    </section>
+
+    <!-------Footer------->
+    <footer>
+      <h3>Omowunmi <span>Kamiludeen</span></h3>
+      </h3>
+      <p>Thank You...</p>
+      <p>&copy; CopyRight By Omowunmi Kamiludeen</p>
+    </footer>
+
+
+    
 
     <!-------Javascript for Toggle Menu------->
     <script>
@@ -97,5 +232,25 @@
         navLinks.style.right = "-150px";
       }
     </script>
+
+<!-------Javascript for Toggle Form------->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwNqdlEk5dC4oWEpCMc6gb1rO_dbQKtnj9FhH1ANbooH9_dLI4LtXCZFHgQT1mfXdEcww/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML ="Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+      
   </body>
 </html>
