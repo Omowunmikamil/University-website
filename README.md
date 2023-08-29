@@ -45,7 +45,7 @@ Create a Pull Request: Open a pull request on the original repository, describin
 Please ensure your contributions follow the project's coding standards and maintain consistency with existing styles.
 
 Contact
-If you have any questions or suggestions, feel free to reach out to the project maintainers at devteam@university.edu.
+If you have any questions or suggestions, feel free to reach out to the project maintainers at balikiskamil@gmail.com.
 
 Thank you for your interest in contributing to the University Website project!
 
